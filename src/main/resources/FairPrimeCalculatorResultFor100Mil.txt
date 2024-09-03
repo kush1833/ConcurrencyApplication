@@ -1,0 +1,19 @@
+Time taken = 58686
+Time taken = 58687
+Time taken = 58687
+Time taken = 58687
+Time taken = 58686
+Time taken = 58687
+Time taken = 58687
+Time taken = 58686
+Time taken = 58687
+Time taken = 58686
+Total primes from 1 to 100000000 = 5761456
+
+PS: Note here that because task was fairly allocated to all threads and no thread was sitting idle, time taken is fairly even
+If we had allocated a set of numbers to each thread, say for example:
+Thread 1: 1 to 1,000,000
+Thread 2: 1,000,001 to 2,000,000  and so on
+then, thread 1 would have finished before thread 2 and would be sitting idle because 1 to 1 mill will have lesser iterations
+than 1 mill to 2 mill. This is unfair allocation of work and we have to be careful that we don't end up with such unoptimized usage
+of multi-threading.
