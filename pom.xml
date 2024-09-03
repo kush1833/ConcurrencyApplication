@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>prime-calculator</module>
-        <module>concurrency-practice</module>
+        <module>multithreaded-web-server</module>
     </modules>
 
     <properties>
